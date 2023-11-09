@@ -43,6 +43,12 @@ h3 {
   line-height: 1;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   font-family: var(--ff-base);
   font-weight: var(--fw-regular);
