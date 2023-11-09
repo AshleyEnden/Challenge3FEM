@@ -1,0 +1,119 @@
+:root {
+  --clr-primary-400: hsl(158, 36%, 37%);
+  --clr-primary-500: hsl(158, 36%, 20%);
+  --clr-secondary-200: hsl(30, 38%, 92%);
+  --clr-neutral-900: hsl(212, 21%, 14%);
+  --clr-neutral-400: hsl(228, 12%, 48%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --ff-accent: "Fraunces", serif;
+  --ff-base: "Montserrat", sans-serif;
+  --fw-regular: 500;
+  --fw-bold: 700;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+body {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  color: var(--clr-neutral-900);
+  background: var(--clr-secondary-200);
+  font-size: 0.875rem;
+  margin: 1rem;
+}
+
+.product {
+  border-radius: 10px;
+  background: var(--clr-neutral-100);
+  overflow: hidden;
+  display: grid;
+  max-width: 600px;
+  margin: auto;
+}
+
+@media (min-width: 600px) {
+  .product {
+    padding: 2 rem;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    justify-content: center;
+  }
+}
+.product__content {
+  display: grid;
+  padding: 2em;
+  gap: 1em;
+  color: var(--clr-neutral-400);
+}
+
+.product__category {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.product__title {
+  font-family: var(--ff-accent);
+  font-size: 2em;
+  color: var(--clr-neutral-900);
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2em;
+}
+
+.product__price {
+  color: var(--clr-primary-400);
+  font-size: 2.5em;
+  font-family: var(--ff-accent);
+}
+
+.button {
+  display: flex;
+  background-color: var(--clr-primary-400);
+  border-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-bold);
+  border-radius: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--clr-primary-500);
+}/*# sourceMappingURL=style.css.map */
