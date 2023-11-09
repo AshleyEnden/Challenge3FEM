@@ -47,10 +47,11 @@ h3 {
 //General styling
 
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
   
 body {
     font-family: var(--ff-base);
@@ -59,7 +60,6 @@ body {
     background: var(--clr-secondary-200);
     font-size: 0.875rem;
     margin: 1rem;
-
 }
 
 
